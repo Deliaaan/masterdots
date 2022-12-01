@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masterdots Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/8994/8994998.png" alt="">
+    </header>
+
+    <main>
+        <form action="#">
+            <div class="itemform">
+                <label for="nick">Elige un nickname</label>
+                <input type="text" name="nick" value="@" id="nicka" readonly>
+                <input type="text" name="nick" id="nick">
+            </div>
+
+            <div class="itemform">
+                <label for="tamano">Tamaño del juego</label>   
+                <select name="tamano" id="tamano">
+                    <option value=""> Selecciona un tamaño </option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+
+            <div class="itemform">
+                <input type="submit" value="JUGAR">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Curso FrontEnd HTML, CSS y JS</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
