@@ -6,31 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterdots game</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- CABECERA -->
     <header>
-        <img src="./img/logo.png" alt="Logo MasterDots">
+        <img src="https://cdn-icons-png.flaticon.com/512/8389/8389865.png" alt="Logo MasterDots">
     </header>
     <!-- FORMULARIO USUARIO -->
     <main>
         <form action="#">
             <div class="itemform">
                 <label for="nick">introduce tu nick</label>
+                <input type="text" name="nick" value="@" id="nicka" readonly> 
                 <input type="text" name="nick" id="nick">
             </div>
+
+            <div class="itemform">
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" value="correo@gmail.com" id="email"> 
+            </div>
+
             <div class="itemform">
                 <label for="tamano">tamaño del juego</label>
                 <select name="tamano" id="tamano">
-                    <option value="">--Por favor elige un tamaño--</option>
+                    <option value="">Por favor elige un tamaño</option>
                     <option value="1">4x4</option>
                     <option value="2">5x5</option>
                     <option value="3">6x6</option>
                 </select>
             </div>
             <div class="itemform">
-                <input type="submit" value="JUGAR">
+                <input type="submit" value="JUGAR" onclick="test()">
             </div>
         </form>
     </main>
@@ -38,5 +48,7 @@
     <footer>
         <p>Curso FrontEnd HTML, CSS y JS</p>
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
