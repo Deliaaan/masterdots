@@ -10,8 +10,18 @@ console.log(nickinput.value.nodeType);
 
 const tamanoinput = document.getElementById('tamano');
 console.log(tamanoinput.value);
-console.log(tamanoinput.options[tamanoinput.selectedIndex].text)*/
+console.log(tamanoinput.options[tamanoinput.selectedIndex].text)
 
 function test(){
     console.log("Evento sobre click")
+}*/
+
+// INICIALIZACION DE VARIABLES
+
+const botonJugar = document.getElementById("jugar");
+
+function comprobarFormulario(){
+    console.log("Hola pusssssy jajkad")
 }
+
+botonJugar.addEventListener('click', comprobarFormulario);
